@@ -1,6 +1,8 @@
 var Horizon = require('@horizon/client/dist/horizon-dev');
 import {Observable} from 'data/observable';
 import {ObservableArray} from 'data/observable-array';
+import frame = require("ui/frame");
+import {ListView} from 'ui/list-view';
 var config = require('./config');
 
 const SERVER_URL = config.SERVER_URL;
@@ -14,6 +16,8 @@ export class HorizonDemo extends Observable {
 
     constructor() {
         super();
+        this.messages = new ObservableArray();
+        
         this.horizon = new Horizon({ host: SERVER_URL });
 
         this.horizon.onReady()
@@ -27,8 +31,11 @@ export class HorizonDemo extends Observable {
 
         this.chat = this.horizon('messages');
 
-        this.getChats().subscribe((newMessage: any) => {
-            this.messages.push(newMessage);
+        this.getChats().subscribe((newMessage: any) => {           
+            newMessage.map((val,index)=>{
+                this.messages.setItem(index,val);
+            });
+            this.messages.reverse();            
         });
     }
 
@@ -46,9 +53,9 @@ export class HorizonDemo extends Observable {
                 timeStamp: new Date(),
                 avatar: this.avatar_url,
             }).subscribe((res) => {
-                console.log(res);
                 console.log(`Adding new message:`);
-                console.log(this.newMessage);
+               let lv =  <ListView>frame.topmost().getViewById('list');
+               lv.scrollToIndex(this.messages.length - 1);
             },
             (error) => { console.log(error) });
         this.set('newMessage', '');

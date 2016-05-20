@@ -3,3 +3,4 @@ hooks
 platforms
 *.js
 *.map
+*.log
