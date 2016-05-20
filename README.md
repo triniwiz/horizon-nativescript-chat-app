@@ -1,3 +1,5 @@
+This is an example of how to integrate [Horizon](http://horizon.io/) with a [NativeScript](https://www.nativescript.org/) app.
+
 ### Prerequisites
 
 * Install Rethinkdb: https://rethinkdb.com/docs/install/
