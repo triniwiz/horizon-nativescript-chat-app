@@ -7,11 +7,6 @@ This is an example of how to integrate [Horizon](http://horizon.io/) with a [Nat
 * Install TypeScript : `npm install -g typescript`
 
 
-### Angular integration
-
-`git clone -b angular https://github.com/triniwiz/horizon-nativescript-chat-app`
-
-
 ## Server Setup
 
 
@@ -23,7 +18,7 @@ cd nschatAPP
 hz serve --dev  --allow-unauthenticated true --auto-create-collection true --auto-create-index true
 ```
 
-##Clone ng2 branch
+### Angular integration
 
 `git clone -b angular https://github.com/triniwiz/horizon-nativescript-chat-app`
 
