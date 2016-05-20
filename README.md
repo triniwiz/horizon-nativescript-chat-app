@@ -32,7 +32,7 @@ npm i
 tns run android
 ```
 
-##Start IOS version
+##Start iOS version
 ```
 cd horizon-nativescript-chat-app
 npm i
