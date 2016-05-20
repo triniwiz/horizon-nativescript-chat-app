@@ -1,14 +1,11 @@
-# horizon-nativescript-chat-app
+### Prerequisites
 
-##Install Rethinkdb 
+* Install Rethinkdb: https://rethinkdb.com/docs/install/
+* Install Horizon: `npm install -g horizon`
 
-https://rethinkdb.com/docs/install/
+## Server Setup
 
-##Install Horizon
-
-`npm install -g horizon`
-
-##Create horizon server
+### Create horizon server
 
 ```
 hz init nschatApp
@@ -16,12 +13,13 @@ cd nschatAPP
 hz serve --dev  --allow-unauthenticated true --auto-create-collection true --auto-create-index true
 ```
 
-##Clone {N} vanilla
+## Client Setup
 
 `git clone https://github.com/triniwiz/horizon-nativescript-chat-app`
 
+*NOTE: If you want to try the Angular integration, skip to next...*
 
-##Clone ng2 branch
+### Angular integration
 
 `git clone -b angular https://github.com/triniwiz/horizon-nativescript-chat-app`
 
