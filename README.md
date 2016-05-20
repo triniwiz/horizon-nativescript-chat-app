@@ -1,17 +1,19 @@
-# horizon-nativescript-chat-app
+This is an example of how to integrate [Horizon](http://horizon.io/) with a [NativeScript](https://www.nativescript.org/) + [Angular2](https://angular.io/) app.
 
-##Prerequisites
-* `npm i -g nativescript`
-* `npm i -g typescript`
+### Prerequisites
+
+* Install Rethinkdb: https://rethinkdb.com/docs/install/
+* Install Horizon: `npm install -g horizon`
+* Install TypeScript : `npm install -g typescript`
 
 
-##Install Rethinkdb 
+### Angular integration
 
-https://rethinkdb.com/docs/install/
+`git clone -b angular https://github.com/triniwiz/horizon-nativescript-chat-app`
 
-##Install Horizon
 
-`npm install -g horizon`
+## Server Setup
+
 
 ##Create horizon server
 
