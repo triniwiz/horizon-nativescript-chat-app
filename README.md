@@ -1,4 +1,4 @@
-Get started building [Horizon](http://horizon.io/) + [NativeScript](https://www.nativescript.org/)  apps quickly.
+This is an example of how to integrate [Horizon](http://horizon.io/) with a [NativeScript](https://www.nativescript.org/) + [Angular2](https://angular.io/) app.
 
 ### Prerequisites
 
@@ -18,9 +18,9 @@ cd nschatAPP
 hz serve --dev  --allow-unauthenticated true --auto-create-collection true --auto-create-index true
 ```
 
-### Client Setup
+### Angular integration
 
-`git clone https://github.com/triniwiz/horizon-nativescript-chat-app`
+`git clone -b angular https://github.com/triniwiz/horizon-nativescript-chat-app`
 
 ##Start Android version
 ```
@@ -34,4 +34,3 @@ tns run android
 cd horizon-nativescript-chat-app
 npm i
 tns run ios
-```
